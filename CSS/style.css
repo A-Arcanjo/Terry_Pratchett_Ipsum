@@ -1,0 +1,95 @@
+/* Import H1 Font family*/
+@font-face {
+  font-family: "caslon_antiquebold";
+  src: url("../assets/webfontkit-20220916-063313/caslonantique-bold-webfont.woff2")
+      format("woff2"),
+    url("../assets/webfontkit-20220916-063313/caslonantique-bold-webfont.woff")
+      format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f1e1e;
+  color: goldenrod;
+  font-family: "caslon_antiquebold";
+}
+
+header {
+  display: flex; 
+}
+
+/* GITHUB LiNK */
+.github {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: auto;
+  width: 60px;
+  height: 60px;
+  background-image: url("../assets/github.png");
+  background-size: cover;
+}
+
+h1 {
+  margin-top: 1rem;
+  margin-right: auto;
+  width: fit-content;
+  font-size: 4rem;
+  text-align: center;
+}
+
+form {
+  margin: auto;
+  margin-top: 1rem;
+  width: 350px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Center the text generator container */
+.main-container {
+  margin: auto;
+  margin-top: 1.5rem;
+  width: 700px;
+  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url(../assets/disc-world.gif);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.text-container {
+  max-height: 90%;
+}
+
+.display:empty {
+  visibility: hidden;
+}
+
+.display {
+  position: relative;
+  top: 2rem;
+  width: 90%;
+  max-height: 90%;
+  margin: auto;
+  padding: 1rem;
+  text-align: justify;
+  font-size: 1.5rem;
+  background-color: rgb(31, 30, 30, 0.92);
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.button {
+  width: 100px;
+  height: 25px;
+  color: #1f1e1e;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius:5px;
+
+}

@@ -4,9 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="assets/discworld_icon.png" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Discworld Dummy Text Generator</title>
   </head>
   <body>
-    <script src="script.js"></script>
+    <header>
+    <a class="github" href="http://"></a>
+    <h1>Discworld Dummy Text Generator</h1>
+    </header>
+    <form action="submit">
+      <label for="paragraph-number">Paragraphs:</label>
+      <input type="number" class="amount" placeholder="How many Paragraphs?"/>
+      <button type="submit" class="button">Create</button>
+      </form>
+    <div class="main-container">
+      <div class="text-container">
+        <div class="display"></div>
+      </div>
+    </div>
+    <!-- using type module to import variable text.js-->
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>
