@@ -10,18 +10,20 @@
   </head>
   <body>
     <header>
-    <a class="github" href="http://"></a>
-    <h1>Discworld Dummy Text Generator</h1>
+      <a class="github" href="https://github.com/A-Arcanjo/Terry_Pratchett_Ipsum"></a>
+      <h1>Discworld Dummy Text Generator</h1>
     </header>
     <form action="submit">
       <label for="paragraph-number">Paragraphs:</label>
-      <input type="number" class="amount" placeholder="How many Paragraphs?"/>
-      <button type="submit" class="button">Create</button>
-      </form>
+      <input
+        type="number"
+        class="amount"
+        placeholder="Generate up to 10 Paragraphs."
+      />
+      <button type="submit" class="button">Generate</button>
+    </form>
     <div class="main-container">
-      <div class="text-container">
-        <div class="display"></div>
-      </div>
+      <div class="display"></div>
     </div>
     <!-- using type module to import variable text.js-->
     <script type="module" src="./js/app.js"></script>

@@ -23,11 +23,11 @@ function ipsumGenerator(e) {
     let dummyText = text
       .slice(0, parAmount) // .slice starts index 0, parAmount determines the indexOf the second cut, where the copy of the array will be created
        dummyText = dummyText.map((item)=> {
-        return `${item}`
+        return `<p class="paragraph"> ${item} </p>` 
        }) 
-      .join("\n"); // it will print the paragraphs as one text, without it we get an array with strings.
+      .join(""); // it will print the paragraphs as one text, without it we get an array with strings.
 
-    display.textContent = `${dummyText}`;
+    display.innerHTML = dummyText; // use innerHTML to set the string to paragraph
   }
   
 
